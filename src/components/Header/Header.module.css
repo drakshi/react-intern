@@ -1,0 +1,50 @@
+.header {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #252525;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+  z-index: 10;
+  
+}
+
+.register{
+  cursor: pointer;
+}
+.nav{
+  background-color: rgb(246, 245, 232);
+  color: black !important;
+  padding:0% 2%;
+  font-weight: 500 !important;
+}
+
+@media (min-width: 992px){
+  .header {
+    justify-content: center;
+  }
+}
+
+a{
+  color: #000;
+}
+.modal-icon{
+    fill: #fffef2;
+    height: 22px;
+    margin-left: 20px;
+    stroke: #fffef2;
+    stroke-width: 1px;
+    width: 29px;
+}
+.toggle-icon{
+  justify-content: flex-end !important;
+  border: none !important;
+  background-color: rgb(246, 245, 232);
+}
+.toggle-iconbar{
+  border: none !important;
+  color: #252525 !important;
+}

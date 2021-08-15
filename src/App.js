@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from 'react';
+import Header from '../src/components/Header/Header';
+
+import LoginModal from '../src/components/Header/LoginModal';
+import { useState } from 'react';
+import Product2 from './components/Product/Product2';
+
+import Footer from './components/Footer/Footer';
 
 function App() {
+
+  const [cartIsShown, setCartIsShown] = useState(false);
+
+  const showCartHandler = () => {
+    setCartIsShown(true);
+  };
+
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+     {cartIsShown && <LoginModal onClose={hideCartHandler} />}
+      <Header onShowCart={showCartHandler}/>
+      
+      <Product2 />
+      
+      <Footer />
+    </Fragment>
   );
 }
 

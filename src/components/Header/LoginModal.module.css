@@ -1,0 +1,155 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .modal {
+    position: fixed;
+    top: 20vh;
+    left: 5%;
+    width: 80%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
+  }
+  
+  @media (min-width: 768px) {
+    .modal {
+      width: 40rem;
+      left: calc(50% - 20rem);
+    }
+  }
+  
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .login-form{
+    background-color: #fffef2;
+    color: #252525;
+    padding: 20px;
+    position: relative;
+    transform: translateZ(0);
+    width: 100%;
+    font-size: 1.6rem;
+  }
+  .login-form h1{
+    font-size: 1.6rem;
+  }
+  .modal-title{
+    font-size: 2.6rem;
+    line-height: 1.54;
+    padding: 40px 0 10px;
+  }
+  .modal-subtitle{
+      font-size: 1.0rem;
+    line-height: 1.7;
+    color: #666;
+  }
+  @media (min-width: 640px){
+.form-row {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+  }
+  .form-row {
+    animation: fade-in .3s ease-in;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    position: relative;
+    z-index: 1;
+}
+.form-text{
+    margin-bottom: 35px;
+    padding-top: 35px;
+    margin: 0 0 30px;
+    padding: 30px 10px 0;
+    position: relative;
+    width: 100%;
+}
+.form-text label{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.form-text input{
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    border: solid rgba(51,51,51,.2);
+    border-width: 0 0 1px;
+    color: #333;
+    height: 40px;
+    text-overflow: ellipsis;
+    transition: all .2s cubic-bezier(.215,.61,.355,1);
+    width: 100%;
+}
+.login-btn{
+    border: 1px solid rgba(51,51,51,.2);
+    height: 60px;
+    min-width: 210px;
+    padding: 21px 23px;
+    position: relative;
+    transition: all .5s ease;
+    background-color: #333;
+    margin: 25px 0 0;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+}
+.add-to-cart{
+    border-color: #333;
+    background-color: #333;
+    color: #f6f5e8;
+    width: 100%;
+    width: min-content;
+    min-width: auto;
+    max-width: 100%;
+    width: 100%;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 20px 15px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.close-btn button{
+  fill: #252525;
+  height: 14px;
+  width: 14px;
+  align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 30px;
+}
